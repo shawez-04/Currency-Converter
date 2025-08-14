@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">Currency Converter</div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+      <h2>Currency Converter</h2>
+      <form>
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input value="1" type="text" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class = mssg-show><div class="msg">1USD = 80INR</div></div>
+        <button id="convertBtn">Get Exchange Rate</button>
+      </form>
+    </div>
+<section id="about" class="about">
+  <h2>About This Converter</h2>
+  <p>
+    This currency converter lets you instantly convert between global currencies using the latest exchange rates.
+    Designed for simplicity and accuracy, it’s perfect for travelers, students, and businesses who need quick
+    conversions. All rates are updated in real time from a reliable API so you always get the most accurate values.
+    Just choose your source and target currencies, enter the amount, and get your result instantly.
+    No distractions — just fast, clean, and accurate currency conversion whenever you need it.
+  </p>
+  <small class="creator"><a href="https://shawez-04.github.io/My-Portfolio/">💡 Created by Shawez</small></a>
+</section>
+
+    <script src="codes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
